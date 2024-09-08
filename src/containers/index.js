@@ -1,0 +1,8 @@
+export {default as Navbar} from './Navbar'
+export {default as Hero} from './Hero'
+export {default as Scroll} from './Scroll'
+export {default as Guarantee} from './Guarantee'
+export {default as Product} from './Product'
+export {default as Portfolio} from './Portfolio'
+export {default as Form} from './Form'
+export {default as Footer} from './Footer'
