@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaAngleDown } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa6";
+
 
 
 const ProductC = ({icon, label, text, drop, desc}) => {
@@ -16,9 +18,10 @@ const ProductC = ({icon, label, text, drop, desc}) => {
         <span className='text-center text-sm'>
           {text}
         </span>
-        <div className='flex flex-row items-center justify-center cursor-pointer'>
+        <div className='flex flex-row items-center justify-center cursor-pointer animate-bounce'>
           <p className='text-purple-500'>Click to Learn More</p> 
-          <FaAngleDown className='text-purple-500' />
+          {!dropdown && <FaAngleDown className='text-purple-500' />}
+          {dropdown && <FaAngleUp className='text-purple-500'/>}
         </div>
         {dropdown && desc}
       </div>
