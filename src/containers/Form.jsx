@@ -9,8 +9,8 @@ function Form() {
     e.preventDefault();
 
     // Construct the email subject and body
-    const subject = `H1! Procerum: ${name}`;
-    const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+    const subject = `Hi! Procerum: it is ${name}`;
+    const body = `${message}`;
 
     // Open the email client with the pre-filled subject and body
     window.location.href = `mailto:procerum.press@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
