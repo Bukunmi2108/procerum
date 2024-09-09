@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Btn } from '../components'
 import img1 from '../assets/m1.png' 
 import img2 from '../assets/m2.png' 
@@ -39,10 +40,12 @@ const Hero = () => {
           <p classname="text-white ">
             We craft websites that attract more clients, reinforces your brand identity and acts as an online sales person.
           </p>
+          <Link to='/contact'>
           <Btn 
             classes = 'bg-white py-4 px-6 w-fit text-xl font-semibold text-primary'
             label="Let's get started"
           />
+          </Link>
         </div>
 
         <img src={currentImg} className='' alt='Portfolio'/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import dash from '../assets/dash.png'
+import { Link } from 'react-router-dom'
 import {Btn} from '../components'
 
 const Guarantee = () => {
@@ -16,10 +17,12 @@ const Guarantee = () => {
             <br/>
             If you don’t see results using our process, you can get your money back.
           </p>
+          <Link to='/contact'>
           <Btn 
             classes = 'bg-white p-4 font-poppins text-primary text-lg font-semibold w-fit'
             label = "Let's get started"
           />
+          </Link>
         </div>
       </div>
     </div>

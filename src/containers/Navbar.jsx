@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link className='py-4 md:p-4'>PortfoLio</Link> */}
           <Link to="/about" className='py-4 md:p-4'>About us</Link>
           {/* <Link className='py-4 md:p-4'>What we are building</Link> */}
-          <Link to="/contact" className='p-4 bg-white text-primary font-semibold text-center'>Contact us</Link>
+          <Link to="/contact" className='p-4 m-2 bg-white text-primary font-semibold text-center'>Contact us</Link>
         </ul>}
 
 
