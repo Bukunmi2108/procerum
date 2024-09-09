@@ -1,17 +1,15 @@
-import {Navbar, Hero, Scroll, Guarantee, Product, Portfolio, Form, Footer} from './containers'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home, About, Contact } from './pages'
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Scroll />
-      <Guarantee />
-      <Product />
-      <Portfolio />
-      <Form />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

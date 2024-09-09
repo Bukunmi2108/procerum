@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 function Form() {
   const [name, setName] = useState('');
@@ -69,7 +69,7 @@ function Form() {
 
       <button
         type="submit"
-        className="bg-purple-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-primary"
+        className="bg-purple-500 text-white font-bold py-2 px-4 rounded hover:bg-primary"
       >
         Submit
       </button>
