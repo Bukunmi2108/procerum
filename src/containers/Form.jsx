@@ -13,7 +13,7 @@ function Form() {
     const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
     // Open the email client with the pre-filled subject and body
-    window.location.href = `procerum.press@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:procerum.press@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
