@@ -5,6 +5,8 @@ function Form() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const formRef = useRef(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -14,6 +16,8 @@ function Form() {
 
     // Open the email client with the pre-filled subject and body
     window.location.href = `mailto:procerum.press@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    formRef.current.reset();
   };
 
   return (
