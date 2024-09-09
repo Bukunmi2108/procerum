@@ -10,7 +10,7 @@ import { RiSeoLine } from "react-icons/ri";
 const Product = () => {
   return (
     <div className='p-8 bg-blue-50 font-poppins text-primary flex flex-col gap-12 w-full overflow-x-hidden'>
-        <h2 className='text-4xl font-semibold text-center'>Our Products</h2>
+        <h2 className='text-4xl font-semibold text-center'>Our Offerings</h2>
 
         <div className='flex items-center justify-center flex-col md:flex-row gap-8'>
             <ProductC 
@@ -45,7 +45,7 @@ const Product = () => {
              icon={<RiSeoLine className='w-16 h-auto'/>
              }
              label='SEO'
-             text='Do you want clients to find you easily? See how we optimse Google Business Profile.'
+             text='Do you want clients to find you easily? See how we optimise Google Business Profile.'
             desc={
                 <ul className='list-disc w-full'>
                   <li>Optimizing Google business profile</li>
