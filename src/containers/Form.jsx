@@ -33,7 +33,7 @@ function Form() {
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+          className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
           required
         />
       </div>
@@ -48,7 +48,7 @@ function Form() {
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+          className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
           required
         />
       </div>
@@ -62,7 +62,7 @@ function Form() {
           name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+          className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
           required
         ></textarea>
       </div>
